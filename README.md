@@ -41,13 +41,13 @@ Un-skip each test, one at a time in order, so you can concentrate on making one 
 These are the critters we are asking you to complete for pre-work.
 `Unicorn` will help you get started and is very simple compared to the others.
 
-* `unicorn` - done
-* `medusa` - done
-* `werewolf` - done
-* `centaur` - done
-* `direwolf` - done
+* `unicorn`
+* `medusa` 
+* `werewolf` 
+* `centaur` 
+* `direwolf` 
 * `fairy`
-* `ogre` - done
+* `ogre`
 * `sphinx`
 
 ### Extra Critters
