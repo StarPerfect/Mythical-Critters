@@ -12,9 +12,9 @@ class Sphinx {
     }
 
     attemptAnswer(guess) {
-        let correctRiddle = this.riddles.some(riddle => riddle.answer === guess);
+        let correctRiddle = this.riddles.find(riddle => riddle.answer === guess);
         if (correctRiddle) {
-            this.riddles.pop(correctRiddle);
+            this.removeRiddle(correctRiddle);
             if (this.riddles.length === 0) {
                 return (`PSSSSSSS THIS HAS NEVER HAPPENED, HOW DID YOU KNOW THE ANSWER WAS "${guess}"???`)
             } else {
@@ -22,6 +22,13 @@ class Sphinx {
             }
         } else {
             this.heroesEaten++;
+        }
+    }
+
+    removeRiddle(correctRiddle) {
+        var index = this.riddles.indexOf(correctRiddle);
+        if (index > -1) {
+            this.riddles.splice(index, 1);
         }
     }
 }
